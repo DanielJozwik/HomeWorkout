@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout3"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="@drawable/background_outlogo"
+    tools:context=".days.MondayActivity">
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="172dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="120dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/trainningtype"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="139dp"
+        android:text="Ćwiczenia:"
+        android:textColor="#000000"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/exerciseList"
+        android:layout_width="293dp"
+        android:layout_height="390dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="216dp"
+        android:layout_marginEnd="75dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="60dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="148dp"
+        android:background="@drawable/background_buttomv2"
+        android:onClick="ok"
+        android:shadowColor="#515CA8"
+        android:shadowDx="2"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="OK"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,OnClick" />
+
+
+    <Button
+        android:id="@+id/fromTrainingDayToMenu"
+        android:layout_width="189dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="88dp"
+        android:background="@drawable/background_buttomv2"
+        android:onClick="fromTrainingDayToMenu"
+        android:shadowColor="#515CA8"
+        android:shadowDx="2"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="Wróć"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints,OnClick" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

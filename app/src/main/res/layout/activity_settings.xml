@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="@drawable/background_outlogo"
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SettingsActivity">
+
+        <Spinner
+            android:id="@+id/genderSpinner"
+            android:layout_width="145dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="80dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.699"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/plec"
+            android:layout_width="89dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="96dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="225dp"
+            android:text="Płeć:"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/wiek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="96dp"
+            android:layout_marginTop="152dp"
+            android:layout_marginEnd="241dp"
+            android:text="Wiek:"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/waga"
+            android:layout_width="95dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="96dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="177dp"
+            android:text="Waga[kg]:"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/wiek" />
+
+        <TextView
+            android:id="@+id/wzrost"
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="96dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="178dp"
+            android:text="Wzrost[cm]:"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/waga" />
+
+        <TextView
+            android:id="@+id/utrata"
+            android:layout_width="145dp"
+            android:layout_height="67dp"
+            android:layout_marginStart="96dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="157dp"
+            android:text="Utrata wagi na tydzień[kg]:"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/wzrost" />
+
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="102dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="136dp"
+            android:layout_marginEnd="76dp"
+            android:ems="10"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/weight"
+            android:layout_width="111dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="208dp"
+            android:layout_marginEnd="68dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/growth"
+            android:layout_width="117dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="268dp"
+            android:layout_marginEnd="60dp"
+            android:ems="10"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/weightLoss"
+            android:layout_width="123dp"
+            android:layout_height="73dp"
+            android:layout_marginTop="340dp"
+            android:layout_marginEnd="52dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="139dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="428dp"
+        android:background="@drawable/background_buttomv2"
+        android:onClick="calculateCalories"
+        android:shadowColor="#080808"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="15"
+        android:text="Zapisz"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.808"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="139dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="428dp"
+        android:background="@drawable/background_buttomv2"
+        android:onClick="fromSettingsToMenu"
+        android:shadowColor="#080808"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="15"
+        android:text="Wróć"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.264"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
